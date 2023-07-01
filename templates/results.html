@@ -21,19 +21,19 @@
 
    <table cellspacing="0">
       <tr>
-         <th>Product</th>
-         <th>Name</th>
-         <th>Rating</th>
-         <th>Comment Heading</th>
-         <th width="230">Comments</th>
+         <th>Video Link</th>
+         <th>Thumbnails Link</th>
+         <th>Title</th>
+         <th>Views</th>
+         <th width="230">Upload Date</th>
       </tr>
          {% for review in reviews %}
       <tr>
-          <td>{{review['Product']}}</td>
-         <td>{{review['Name']}}</td>
-         <td>{{review['Rating']}}</td>
-         <td>{{review['CommentHead']}}</td>
-         <td>{{review['Comment']}} </td>
+          <td>{{review['Video Url']}}</td>
+         <td>{{review['Thumbnails Url']}}</td>
+         <td>{{review['Video Title']}}</td>
+         <td>{{review['Video Views']}}</td>
+         <td>{{review['Video Upload Date']}} </td>
        {% endfor %}
    </table>
 </div>
